@@ -1,1 +1,1 @@
-# Operating-System-Website-Disk-Scheduling-Algo-
+# Operating-System-Website-Disk-Scheduling-Algorithm
