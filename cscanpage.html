@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="cscanpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Circular Scan (CSCAN) - Theory </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> Circular Scan (CSCAN) - Theory  </h1>
+      <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/vLqZ6ZMBkX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/CSCAN.html" class="rainbow-button" alt="SIMULATE"></a>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="image1">
+          <img src="images/image4.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig1">C-SCAN Disk Scheduling Algorithm<br></h3>
+      <p>C-SCAN stands for Circular-SCAN. C-SCAN is an enhanced version of SCAN <br>disk scheduling.
+         In the C-SCAN disk scheduling algorithm, the disk head <br>starts to move at one end of the
+         disk and moves towards the other end and <br>service the requests that come in its path and
+         reach another end. After doing this, <br>the direction of the head is reversed. The head
+         reaches the first end without <br>satisfying any request and then it goes back and services
+         the requests which <br>are remaining.</p>
+      <h3 class="titlebig1"><b>Advantages:-</b></h3>
+      <li>C-SCAN offers better uniform waiting time.</li>
+      <li>It offers a better response time.</li>
+      <h3 class="titlebig1"><b>Disadvantages:-</b></h3>
+      <li>In C-SCAN disk scheduling, there are more seek movements as compared<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to SCAN disk scheduling.</li>
+      <li>In C-SCAN disk scheduling, we have to move the disk head to the end of<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the disk even when we don’t have any request to service.</li>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h3 class="titlebig2"><b>Example of C-SCAN Disk Scheduling Algorithm</b></h3>
+    <p>Consider, a disk contains 200 tracks (0-199) and the request queue contains track number 82, 170, 43, 140, 24, 16,190, respectively.<br>
+      The current position of R/W head is 50, and the direction is towards the larger value. Calculate the total number of <br> cylinders moved
+      by head using C-SCAN disk scheduling.</p>
+    <h4 class="titlebig2"><b>Solution</b></h4>
+    <p>As mentioned in the following example, the disk contains 200 tracks. So, we take a track line between 0 to 199.
+       The current position of<br> the read/write head is 50. So we start at 50, then move the read/write head based on the direction.
+       Here, we move towards the larger<br> value as given in the question. When all the requests are addressed, then we calculate a
+       total number of cylinders moved by the head.</p>
+    </div>
+  </div>
+  <div class="image2">
+        <img src="images/cscanpage.png" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+
+</body>
+</html>

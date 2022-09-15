@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <title>OS Virtual Lab</title>
+<!--    <link rel="stylesheet" href="Assets/CSS/Back_Index/background.css">-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="Assets/CSS/Back_Index/navbar.css">-->
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="images1/logo.jpg" alt="logo"><a>
+            <h4>
+<!--                OS Virtual Lab-->
+                 <div class="main">
+                    <a href="#home" class="active">OS Virtual Lab</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+            <li class="li1">
+                <a class="dropdown-toggle" href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/diskalgos.html">ALGORITHMS </a>
+<!--
+                <ul class="dropdown">
+                    <li><a href="#">Page Replacement</a></li>
+                    <li><a href="#">Disk Scheduling</a></li>
+                    <li><a href="#">CPU Scheduling</a></li>
+                    <li><a href="#">Deadlock &amp; Concurrency</a></li>
+                </ul>
+-->
+<!--
+                <ul class="dropdown-menu dropdown-menu-dark show" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Page Replacement</a></li>
+                    <li><a class="dropdown-item" href="#">Disk Scheduling</a></li>
+                    <li><a class="dropdown-item" href="#">CPU Scheduling</a></li>
+                    <li><a class="dropdown-item" href="#">Deadlock &amp; Concurrency</a></li>
+                </ul>
+-->
+            </li>
+            <li class="li2">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/AboutUs.html">ABOUT US</a>
+            </li>
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+<!--
+            <li class="li3">
+                <a href="#">CSCAN</a>
+            </li>
+            <li class="li4">
+                <a href="#">LOOK</a>
+            </li>
+            <li class="li5">
+                <a href="#">CLOOK</a>
+            </li>
+            <li class="li6">
+                <a href="#">LIFO</a>
+            </li>
+            <li class="li7">
+                <a href="#">About Us</a>
+            </li>
+-->
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="home-first-block">
+        <div class="home-info">
+            <div class="home-question-title">
+                 What is an Operating System ?
+            </div>
+            <p class="home-question-answer">
+                 An operating system is the most important software that runs on a computer. It
+                 manages the computer's memory and processes, as well as all of its software and
+                 hardware. It also allows you to communicate with the computer without knowing
+                 how to speak the computer's language.
+            </p>
+            <div class="arrow-box">
+                <img src="images1/down_arrow.jpg" alt="Downward Arrow">
+            </div>
+            <section class="rw-wrapper">
+                <h2 class="rw-sentence">
+                    <span>Algorithms: </span>
+                    <div class="rw-words rw-words-1">
+                        <span>Page Replacement</span>
+                        <span>Disk Scheduling</span>
+                        <span>CPU Scheduling</span>
+                        <span>Deadlock &amp; Concurrency</span>
+                        <span>Page Replacement</span>
+                        <span>Disk Scheduling</span>
+                    </div>
+<!--                    <br />-->
+
+                </h2>
+            </section>
+        </div>
+        <div class="home-os-video">
+            <iframe class="os-video" width="450" height="253" src="https://www.youtube.com/embed/fkGCLIQx1MI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="home-second-block">
+        <div class="cards">
+          <div class="card">
+            <h2 class="card-title">Page Replacement</h2>
+            <img src="images1/page_image_1.png" alt="">
+            <p class="card-desc">In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in.</p>
+          </div>
+          <div class="card">
+              <a class="diskcard" href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/disk.html">
+            <h2 class="card-title">Disk Scheduling</h2>
+            <img src="images1/disk_image.jpg" alt="">
+              <p class="card-desc">Disk scheduling is done by operating systems to schedule I/O requests arriving for the disk. Disk scheduling is also known as I/O scheduling.</p></a>
+          </div>
+          <div class="card">
+            <h2 class="card-title">CPU Scheduling</h2>
+            <img src="images1/cpu_image.png" alt="">
+            <p class="card-desc">CPU scheduling is a process which allows one process to use the CPU while the execution of another process is on hold due to unavailability of any resource like I/O etc, thereby making full use of CPU.</p>
+          </div>
+      <div class="card">
+        <h2 class="card-title">Deadlock &amp; Concurrency</h2>
+        <img src="images1/deadlock_image.jpg" alt="">
+        <p class="card-desc">Concurrency is the execution of the multiple instruction sequences at the same time. It happens in the operating system when there are several process threads running in parallel.</p>
+      </div>
+    </div>
+    </div>
+            <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>OS Virtual Lab</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                        <li>
+                        <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/AboutUs.html">AboutUs</a></li>
+                            <li><a href="#">Page Replacement</a></li>
+                    <li>
+                    <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/disk.html">DiskScheduling</a></li>
+                            <li><a href="#">CPU Scheduling</a></li>
+                            <li><a href="#">Deadlock &amp; Concurrency</a></li>
+                        </ul>
+                    </div>
+                    <div class="col item social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">OS Project © Team 15</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<!--    <script src="app.js"></script>-->
+
+</body>
+
+</html>

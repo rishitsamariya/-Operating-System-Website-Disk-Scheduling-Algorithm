@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="fcfspage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Come First Serve (FCFS) - Theory </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> First Come First Serve - Theory  </h1>
+      <iframe  class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/MZdVAVMgNpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/FCFS.html" class="rainbow-button" alt="SIMULATE"></a>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="image1">
+          <img src="images/image1.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig1">FCFS Disk Scheduling Algorithm<br></h3>
+      <p>FCFS (First-Come-First-Serve) is the easiest disk scheduling <br>algorithm among all the scheduling algorithms. In the FCFS<br> disk scheduling algorithm, each input/output request is served<br> in the order in which the requests arrive. In this algorithm,<br> starvation does not occur because FCFS address each request.</p>
+      <h3 class="titlebig1"><b>Advantages:-</b></h3>
+      <li>In FCFS disk scheduling, there is no indefinite delay.</li>
+      <li>There is no starvation in FCFS disk scheduling because<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; each request gets a fair chance.</li>
+      <h3 class="titlebig1"><b>Disadvantages:-</b></h3>
+      <li>FCFS scheduling is not offered as the best service.</li>
+      <li>In FCFS, scheduling disk time is not optimized.</li>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h3 class="titlebig2"><b>Example of FCFS Disk Scheduling Algorithm</b></h3>
+    <p>Suppose a disk contains 200 tracks (0-199) and the request queue contains track no: 93, 176, 42, 148, 27, 14,180. The current position<br> of the read/write head is 55. Now we have to calculate the total number of track movements of read/write head using FCFS scheduling.</p>
+    <h4 class="titlebig2"><b>Solution</b></h4>
+    <p>As mentioned in the following example, the disk contains 200 tracks, so we take a track line between 0 to 199.
+      The current position<br> of the read/write head is 55. So, we start from 55, then move read/write head in the FCFS order. When all the requests are addressed,<br> then we calculate a total number of cylinders moved by the head.</p>
+    </div>
+  </div>
+  <div class="image2">
+        <img src="images/fcfspage.png" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+
+</body>
+</html>

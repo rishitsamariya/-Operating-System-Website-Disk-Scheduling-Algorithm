@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="disk.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Operating System </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <!-- <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li> -->
+            <!-- <li class="li3">
+                <a href="#">COMPARE </a>
+            </li> -->
+            <li class="li4">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/AboutUs.html">ABOUT US</a>
+            </li>
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> Introduction to Disk Scheduling  </h1>
+      <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/diskalgos.html" class="rainbow-button" alt="Disk Scheduling"></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image1">
+      <img src="https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter10/10_01_DiskMechanism.jpg" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig">Magnetic Disks<br></h3>
+      <p class="mt-2">A magnetic disk is a storage device that uses a magnetization<br>
+                      process to write, rewrite and access data. It is covered with<br>
+                      a magnetic coating and stores data in the form of tracks, spots<br>
+                      and sectors. Hard disks, zip disks and floppy disks are common<br>
+                      examples of magnetic disks.</p>
+      <p class="mt-3">In modern computers, most of the secondary storage is in the <br>
+                      form of magnetic disks.The basic structure of magnetic disk is <br>
+                      depicted as beside:</p>
+    </div>
+  </div>
+
+  <div class="container2">
+  <div class="text2">
+    <h3 class="titlebig2">Purpose of Disk Scheduling<br></h3>
+    <p>The slowest part of the computer system is the hard drive. <br>
+       So, to access the hard drive conveniently or effectively, <br>
+       we need disk scheduling.</p>
+    <p>There may be chances that two or more requests can be distant <br>
+       from each other. Therefore, more disk arm movement can happen.<br>
+       Thus, we need disk scheduling for such handling case.</p>
+    <p>Sometimes, there are various I/O requests which arrive from the<br>
+       different processes. But at a time, the disk controller can only<br>
+       serve one I/O request. So, in this way, the other requests have to<br>
+       wait in the waiting queue, and scheduling is needed for those<br>
+       processes that are waiting in the waiting queue.</p>
+  </div>
+  <div class="image2">
+       <img src="images/ia3.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+</div>
+
+<div class="container3">
+  <div class="image3">
+    <img src="images/ia5.jpg" width="600" height="400" alt="" class="radius-image img-fluid">
+  </div>
+  <div class="text3">
+    <h3 class="titlebig3">Objective of Disk Scheduling<br></h3>
+        <li>Fairness</li>
+        <li>High throughout</li>
+        <li>Minimal traveling head time</li>
+  </div>
+</div>
+<div class="container4">
+  <div class="text4">
+    <h3 class="titlebig4">Basic Terms<br></h3>
+    <div class="image4">
+      <img src="images/ia1.png" alt="" class="radius-image img-fluid">
+    </div>
+    <p>There are various types of disk scheduling algorithms, but before discussing them, we need to know various essentials terms <br>which are given below:</p>
+    <li><b>Seek Time: –</b> Seek time is defined as the time which is used to find the disk arm to a stated track where the data must be<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read and write. The better disk algorithm is one that gives less average seek time.</li>
+    <li><b>Transfer Time: –</b>Transfer time is defined as the time which is used for data transfer. Transfer time depends on two things:</li>
+    <li>Bytes which we have to transfer</li>
+    <li>The rotation speed of the disk.</li>
+    <li><b>Rotational Latency: –</b>Rotational latency means the time which is needed to rotate the desired sector into a position so that<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a read/write heads can be accessed. The better disk scheduling algorithm is that which takes less rotational latency.</li>
+    <li><b>Disk Access Time: –</b> We can define disk access time as:</li>
+    <img src="images/ia3.png"  alt="" class="radius-image img-fluid">
+    <li><b>Disk Response Time: –</b> Disk response time is defined as the average time, which is used by an individual request, waiting <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for input/output operations. The best scheduling algorithm is one that gives less variance response.</li>
+  </div>
+</div>
+<div class="container5">
+<div class="text5">
+  <h3 class="titlebig5">Disk Scheduling algorithms<br></h3>
+  <p>The list of various disks scheduling algorithm is given below. <br>
+     Each algorithm is carrying some advantages and disadvantages. <br>
+     The limitation of each algorithm leads to the evolution of a<br>
+     new algorithm.</p>
+  <li>FCFS scheduling algorithm</li>
+  <li>SSTF (shortest seek time first) algorithm</li>
+  <li>SCAN scheduling</li>
+  <li>C-SCAN scheduling</li>
+  <li>LOOK Scheduling</li>
+  <li>C-LOOK scheduling</li>
+</div>
+<div class="image5">
+     <img src="images/ia6.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+</div>
+</div>
+
+</body>
+</html>

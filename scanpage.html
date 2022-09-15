@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="scanpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Elevator SCAN - Theory </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> Elevator SCAN - Theory  </h1>
+      <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/xouo556RGiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/SCAN.html" class="rainbow-button" alt="SIMULATE"></a>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="image1">
+          <img src="images/image3.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig1">SCAN Disk Scheduling Algorithm<br></h3>
+      <p>The SCAN disk scheduling algorithm is another type of disk scheduling algorithm.<br>
+        In this algorithm, we move the disk arm into a specific direction
+        (direction can be<br> moved towards large value or the smallest value). Each request
+        is addressed that<br> comes in its path, and when it comes into the end of the disk,
+        then the disk arm <br>will move reverse, and all the requests are addressed that are
+        arriving in its path.<br> Scan disk scheduling algorithm is also called an elevator
+        algorithm because its <br>working is like an elevator.</p>
+      <h3 class="titlebig1"><b>Advantages:-</b></h3>
+      <li>In SCAN disk scheduling, there is a low variance of response time.</li>
+      <li>In SCAN disk scheduling, there is no starvation.</li>
+      <h3 class="titlebig1"><b>Disadvantages:-</b></h3>
+      <li>SCAN disk scheduling algorithm takes long waiting time for the cylinders,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; just visited by the head.</li>
+      <li>In SCAN disk scheduling, we have to move the disk head to the end of the<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; disk even when we don’t have any request to service.</li>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h3 class="titlebig2"><b>Example of SCAN Disk Scheduling Algorithm</b></h3>
+    <p>Consider a disk containing 200 tracks (0-199) and the request queue includes the track number 93, 176, 42, 148, 27, 14, 180, respectively.<br>
+       The current position of read//write head is 55, and direction is towards the larger value. Calculate the total number of cylinders moved by<br>
+        the head using SCAN disk scheduling.</p>
+    <h4 class="titlebig2"><b>Solution</b></h4>
+    <p>As mentioned in the following example, the disk contains 200 tracks. So, we take a track line between 0 to 199.
+       The current position of the<br> read/write head is 55. So, we start at 55, then move the read/write head. When all
+       the requests are addressed, then we calculate a total <br>number of cylinders moved by the head.</p>
+    </div>
+  </div>
+  <div class="image2">
+        <img src="images/scanpage.png" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+
+</body>
+</html>

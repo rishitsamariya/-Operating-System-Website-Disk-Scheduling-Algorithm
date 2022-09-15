@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="lookpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOOK - Theory </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> LOOK Algorithm - Theory  </h1>
+      <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/Q2qcqX_hvR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/LOOK.html" class="rainbow-button" alt="SIMULATE"></a>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="image1">
+          <img src="images/image5.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig1">LOOK Disk Scheduling Algorithm<br></h3>
+      <p>Look disk scheduling is another type of disk scheduling algorithm.<br>
+        Look scheduling is an enhanced version of SCAN disk scheduling.<br>
+        Look disk scheduling is the same as SCAN disk scheduling, but in <br>this
+        scheduling, instead of going till the last track, we go till the <br>last
+        request and then change the direction.</p>
+      <h3 class="titlebig1"><b>Advantages:-</b></h3>
+      <li>Look disk scheduling offers low variance in waiting time and response time.</li>
+      <li>In look disk scheduling, there is no requirement of disk head to move till the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end to the disk when we do not have any request to be serviced.</li>
+      <h3 class="titlebig1"><b>Disadvantages:-</b></h3>
+      <li>In look disk scheduling, there is more overhead to find the end request.</li>
+      <li>Look disk scheduling is not used in case of more load.</li>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h3 class="titlebig2"><b>Example of LOOK Disk Scheduling Algorithm</b></h3>
+    <p>Consider a disk contains 200 tracks (0-100). The request queue includes track number 82, 170, 43, 140, 24, 16, 190, respectively.
+       The current<br> position of the read/write head is 50. The direction is towards the larger value. Calculate the total number of
+       cylinders moved by head using<br> look disk scheduling.</p>
+    <h4 class="titlebig2"><b>Solution</b></h4>
+    <p>As mentioned in the following example, disk contains 200 tracks, so we take a track line between 0 to 199.
+       The current position of the read/write<br>  head is 50, So we start at 50, then we move the read/write head.
+       (the disk head is moved towards the larger value as mentioned in the given<br> example). When all the requests
+       are addressed, then we calculate the total number of cylinders moved by the head.</p>
+    </div>
+  </div>
+  <div class="image2">
+        <img src="images/lookpage.png" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+
+</body>
+</html>

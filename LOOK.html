@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="LOOK.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOOK Algorithm - Algorithm </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li>
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> LOOK Algorithm </h1>
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/lookpage.html" class="rainbow-button" alt="Concept"></a>
+    </div>
+  </div>
+  <div class="fcfs_implement">
+    <div class="fcfs_implement_title"> LOOK Algorithm - Implementation </div>
+    <div class="inputs">
+      <form id = "myForm" action = "#">
+      <div class="input-numbers">
+        <label for="numbers">Request Sequence Queue : </label>
+        <input type="text" name="numbers" id="inputNumbers" class="form-control" placeholder="Eg: &quot;82 43 154 17 24 140 190&quot;">
+        <button onclick="autoGenerate()" type="button" class="btn btn-primary auto-generate"> Random Generate </button>
+        <!-- <button onclick="autoGenerate()" type="submit" class="btn_auto-generate"> Auto Generate </button> -->
+      </div>
+      <div class="head_pos">
+        <label for="numbers">Initial Position of Read/Write Head : </label>
+        <input  type="text" name="numbers" id="inputheadpos" class="head_field" placeholder="50">
+        <select class="selectpicker" id="userInputDirection">
+            <option value="null">Select Direction</option>
+            <option value="right">Right</option>
+            <option value="left">Left</option>
+        </select>
+        <!-- <button onclick="autoGenerate();" type="submit" class="btn btn-primary auto-generate"> Auto Generate </button> -->
+      </div>
+      <div class="btnVisualizeContainer">
+        <button onclick="Reseting()" id="reset-button" value="Reset data" type="reset" class="reset_button" style="margin: 0px;"> Reset </button>
+        <button onclick="Calculate()" id="btnVisualize" type="button" class="btn btn-lg btn-primary"> Compute </button>
+        <!-- <button onclick="Calculate()" id="btnVisualize" type="button" class="btn_Compute"> Compute </button> -->
+      </div>
+    </form>
+    </div>
+
+  </div>
+    <div class="mychartclass">
+        <canvas id="myChart">
+        </canvas>
+        <button class="download_btn" style="visibility: initial;"><i class="fa fa-download"></i> Download</button>
+    </div>
+     <script src="LOOK.js"></script>
+
+</body>
+</html>

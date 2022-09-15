@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="diskalgos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Operating Systems - Algorithms </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <!-- <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li> -->
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="main_container">
+      <div class="fcfs_title">
+        <h1 class="fcfs_title_link">  Operating System - Disk Scheduling Algorithms </h1>
+      </div>
+    <div class="wrapper">
+      <div class="card"><img src="images/fcfsdiskback.png">
+        <div class="info">
+          <h1>FCFS</h1>
+          <p>Track Requests are taken in the order they arrived in the Disk Queue.</p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/fcfspage.html"><button>Read More</button></a>
+        </div>
+      </div>
+      <div class="card"><img src="images/sstfdiskback.png"/>
+        <div class="info">
+          <h1>SSTF</h1>
+          <p>Track Requests which are closer to the current request are served first.</p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/sstfpage.html"><button>Read More</button></a>
+        </div>
+      </div>
+      <div class="card"><img src="images/scandiskback.png"/>
+        <div class="info">
+          <h1>SCAN</h1>
+          <p>Track Requests from one End to other End are serviced in between. </p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/scanpage.html"><button>Read More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <div class="card2"><img src="images/cscandiskback.png"/>
+        <div class="info2">
+          <h1>CSCAN</h1>
+          <p>As soon as Head reaches the other End, it immedaitely returns to the beginning of the track.</p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/cscanpage.html"><button>Read More</button></a>
+        </div>
+      </div>
+      <div class="card2"><img src="images/lookdiskback.png"/>
+        <div class="info2">
+          <h1>LOOK</h1>
+          <p>Head starts from the first request at one end of the disk and moves towards the last request at the other end servicing all the requests in between.</p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/lookpage.html"><button>Read More</button></a>
+        </div>
+      </div>
+      <div class="card2"><img src="images/clookdiskback.png"/>
+        <div class="info2">
+          <h1>CLOOK</h1>
+          <p>Head starts from the first request at one end of the disk and moves towards the last request at the other end servicing all the requests in between.</p>
+          <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/clookpage.html"><button>Read More</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

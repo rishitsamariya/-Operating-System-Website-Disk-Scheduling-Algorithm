@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="sstfpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shortest Seek Time First (SSTF) - Theory </title>
+</head>
+<body>
+
+      <div class="backimage">
+  <nav>
+        <div class="logo">
+            <a href="#home"><img id="logo-pic" src="logo.jpg" alt="logo"><a>
+            <h4>
+                 <div class="main">
+                    <a href="#home" class="active">Disk Scheduling</a>
+                 </div>
+
+            </h4>
+        </div>
+        <ul class="nav-links">
+          <li class="li1">
+              <a href="file:///D:/Os_Virtual_Lab/Home.html">HOME </a>
+          </li>
+            <li class="li2">
+                <a class="dropdown-toggle" href="#">ALGORITHMS </a>
+            </li>
+            <li class="li3">
+                <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/Comparison.html">COMPARE </a>
+            </li>
+            <!-- <li class="li4">
+                <a href="#">ABOUT US</a>
+            </li> -->
+            <li class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class=" search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="fcfs_title">
+      <h1 class="fcfs_title_link"> Shortest Seek Time First - Theory  </h1>
+      <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/P_dA8VGJjA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="diskvideo" width="560" height="315" src="https://www.youtube.com/embed/9uoa_p8q47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <a href="file:///C:/Users/Asus/AppData/Local/atom/Algorithms/SSTF.html" class="rainbow-button" alt="SIMULATE"></a>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="image1">
+          <img src="images/image2.jpg" width="600" height="500" alt="" class="radius-image img-fluid">
+    </div>
+    <div class="text1">
+      <h3 class="titlebig1">SSTF Disk Scheduling Algorithm<br></h3>
+      <p>SSTF is another type of scheduling algorithm. In this type of disk scheduling,<br>
+        the job which has less seek time will be executed first. So, in SSTF<br>
+        (shortest seek time first) scheduling, we have to calculate the seek time first.<br>
+        and after calculating the seek time, each request will be served on the basis <br>of
+        seek time. The request which is close to the disk arm will be first executed.<br>
+        There are some drawbacks in FCFS. To overcome the limitations that arise in the<br>
+        FCFS. SSTF scheduling is implemented.</p>
+      <h3 class="titlebig1"><b>Advantages:-</b></h3>
+      <li>In SSTF disk scheduling, the average response time is decreased.</li>
+      <li>Increased throughput.</li>
+      <h3 class="titlebig1"><b>Disadvantages:-</b></h3>
+      <li>There are chances of overhead in SSTF disk scheduling because, in this <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;algorithm, we have to calculate the seek time in advanced.</li>
+      <li>The speed of this algorithm can be decreased because direction could be <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switched frequently.</li>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h3 class="titlebig2"><b>Example of SSTF Disk Scheduling Algorithm</b></h3>
+    <p>Consider a disk that contains 200 tracks (0-199). The request queue includes track number 82, 170, 43, 140, 24, 16, 190, respectively.<br> The current position of the read/write head is 50.</p>
+    <h4 class="titlebig2"><b>Solution</b></h4>
+    <p>Before solving the above example, we have to know about the seek time.</p>
+    <p><b>Seek Time : –</b> Seek time is the time required to move the desired track.</p>
+    <p>To find the seek time, we can use this simple formula.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seek time = Destination – Source<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seek time = Source – Destination</p>
+    <p> Now, we can solve the given example.
+        As mentioned in the following example, disk contains 200 tracks. So, we will take a track line<br>
+        between 0 to 199. The current position of the read/write head is 50. So, we start at 50.</p>
+    </div>
+  </div>
+  <div class="image2">
+        <img src="images/sstfpage.png" width="600" height="500" alt="" class="radius-image img-fluid">
+  </div>
+
+</body>
+</html>
